@@ -1,0 +1,29 @@
+### Get Products
+GET http://localhost/products
+
+### Update Products
+PATCH http://localhost/products/1
+Content-Type: application/json
+
+{
+    "title": "new computer"
+}
+
+### Create Order
+POST http://localhost/orders
+Content-Type: application/json
+
+[
+    {
+        "productId": 1,
+        "quantity": 3
+    },
+    {
+        "productId": 2,
+        "quantity": 5
+    }
+]
+
+### Get Orders
+GET http://localhost/orders
+Content-Type: application/json
